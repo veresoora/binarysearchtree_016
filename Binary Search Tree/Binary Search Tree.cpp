@@ -41,7 +41,8 @@ public:
 
 		if (parent == NULL) //Jika parentnya adalah NULL (Tree is empty)
 		{
-
+			ROOT = newNode; // Tandai new node sebagai ROOT 
+			return; // Exit
 		}
 	}
 };
