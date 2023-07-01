@@ -103,6 +103,11 @@ public:
 
 	void postorder(Node* ptr)
 	{
-
+		//Melakukan postorder traversal tree
+		if (ROOT == NULL)
+		{
+			cout << "Tree is empty" << endl;
+			return;
+		}
 	}
 };
