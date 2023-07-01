@@ -45,13 +45,29 @@ public:
 			return; // Exit
 		}
 
-		if (element < parent->info) //
+		if (element < parent->info) //Jika data field new Node lebih kecil dari parent
 		{
 			parent->leftchild = newNode; // Membuat left child dari parent point ke new Node
 		}
 		else if (element > parent->info) //Jika data field new Node lebih besar dari parent
 		{
-			parent->rightchild = newNode; // 
+			parent->rightchild = newNode; // Membuat right child dari parent  ke new Node
+		}
+	}
+
+
+	void search(string element, Node*& parent, Node*& currentNode)
+	{
+		//Fungsi ini mencari Node saat ini dari Node yang ditenukan serta Node saat ini dari parent
+		currentNode = ROOT;
+		parent = NULL;
+		while ((currentNode != NULL) && (currentNode->info != element))
+		{
+			parent = currentNode;
+			if (element < currentNode->info)
+				currentNode = currentNode->leftchild;
+			else
+				currentNode = currentNode->rightchild;
 		}
 	}
 };
