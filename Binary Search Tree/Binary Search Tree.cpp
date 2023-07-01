@@ -44,5 +44,10 @@ public:
 			ROOT = newNode; // Tandai new node sebagai ROOT 
 			return; // Exit
 		}
+
+		if (element < parent->info) //
+		{
+
+		}
 	}
 };
