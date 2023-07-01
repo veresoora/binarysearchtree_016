@@ -47,7 +47,7 @@ public:
 
 		if (element < parent->info) //
 		{
-
+			parent->leftchild = newNode; // Membuat left child dari parent point ke new Node
 		}
 	}
 };
