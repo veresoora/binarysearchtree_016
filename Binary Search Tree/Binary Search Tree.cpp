@@ -51,7 +51,7 @@ public:
 		}
 		else if (element > parent->info) //Jika data field new Node lebih besar dari parent
 		{
-
+			parent->rightchild = newNode; // 
 		}
 	}
 };
